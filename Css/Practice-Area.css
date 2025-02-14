@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main: #FEE2b3;
+}
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- Navbar ---------------------- */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27.2px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+/* ----------------------- Dropdown ------------------- */
+.dropdown-menu {
+    display: none;
+}
+
+.navbar li:hover .dropdown-menu {
+    height: 250px;
+    width: 220px;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: aliceblue;
+}
+
+.dropdown-menu ul li a {
+    color: black;
+}
+
+/* ---------------- Practice section ------------ */
+.practice-sec{
+    height: 550px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.practice-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.practice-heading strong{
+    font-weight: 900;
+}
+.practice-para{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 400px;
+}
+
+/* ---------------- Practice Areas ------------------- */
+.practice-Areas {
+    height: 120vh;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.heading {
+    font-weight: 300;
+    color: #364d59;
+    font-family: 'Playfair Display';
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+
+.heading strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.heading-para {
+    text-align: center;
+    font-size: 18px;
+    color: #364d59;
+    line-height: 40px;
+}
+
+/*------------------ practice-topics ------------------*/
+.practice-topics {
+    margin-top: 40px;
+}
+
+.topic-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.topic-box {
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
+.topic-box::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: var(--main);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    z-index: -1;
+}
+
+.topic-box i {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.topic-heading {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: 'Playfair Display';
+}
+
+#topic-paragraph {
+    color: #999;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 30px;
+    line-height: 25px;
+}
+
+
+.topic-col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* ---------------- footer -------------------- */
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_footer.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.row-col1{
+    padding-bottom: 20px;
+}
+.row-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.footer-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.footer-para{
+    color: white;
+    max-width: 250px;
+    line-height: 30px;
+}
+.row-col1 .icon-links{
+    list-style: none;
+    display: inline;
+}
+.row-col1 .icon-links .icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.inside-col .footer-ul .footer-li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.inside-col ul .footer-li .footer-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+.inside-col ul li .footer-links:hover{
+    color: white;
+}
+
+/*-------------------- CopyRight Div ---------------------- */
+.border-top{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 1rem;
+}

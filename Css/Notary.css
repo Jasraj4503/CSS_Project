@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main: #FEE2b3;
+}
+
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- Navbar ---------------------- */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27.2px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+/* ----------------------- Dropdown ------------------- */
+.dropdown-menu {
+    display: none;
+}
+
+.navbar li:hover .dropdown-menu {
+    height: 250px;
+    width: 220px;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: aliceblue;
+}
+
+.dropdown-menu ul li a {
+    color: black;
+}
+
+/* ----------------- hero section -------------------- */
+.content {
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ----------------- content-Info -------------------- */
+.content-heading {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Playfair Display';
+}
+
+h1 strong {
+    font-weight: 900;
+}
+
+.para {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* ----------------- appointment-form -------------------- */
+.appointment-form {
+    height: 400px;
+    width: 450px;
+    background-color: white;
+    border-radius: 7px;
+    margin-right: 137px;
+    margin-top: 100px;
+}
+
+form {
+    display: block;
+    padding: 40px;
+}
+
+.title {
+    color: #364d59;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+}
+
+form .input {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    padding-inline: 20px;
+    margin-bottom: 30px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+#btn {
+    background-color: var(--main);
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}
+
+#btn:hover {
+    background-color: #fed48d;
+}
+
+/* ---------------- Practice Areas ------------------- */
+.practice-Areas {
+    height: 120vh;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.heading {
+    font-weight: 300;
+    color: #364d59;
+    font-family: 'Playfair Display';
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+
+.heading strong {
+    color: #000;
+    font-weight: 700;
+}
+
+.heading-para {
+    text-align: center;
+    font-size: 18px;
+    color: #364d59;
+    line-height: 40px;
+}
+
+/*------------------ practice-topics ------------------*/
+.practice-topics {
+    margin-top: 40px;
+}
+
+.topic-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.topic-box {
+    height: 250px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
+.topic-box::before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: var(--main);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    z-index: -1;
+}
+
+.topic-box i {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.topic-heading {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: 'Playfair Display';
+}
+
+#topic-paragraph {
+    color: #999;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 30px;
+    line-height: 25px;
+}
+
+
+.topic-col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* -------------- solutions ----------------- */
+.solutions {
+    height: 85vh;
+    width: 100%;
+    background-color: white;
+}
+
+.solution-content {
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.solution-img {
+    display: inline-flex;
+    column-gap: 20px;
+}
+
+.solution-img-1 {
+    height: 400px;
+    width: 300px;
+    background-image: url(../Images/atty_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-img-2 {
+    height: 400px;
+    width: 300px;
+    background-image: url(../Images/atty_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-heading {
+    color: #364d59;
+    font-weight: 300;
+    font-size: 28px;
+    font-family: 'Playfair Display';
+}
+
+.solution-para {
+    max-width: 400px;
+    color: #364d59;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.btn2 {
+    height: 50px;
+    width: 50%;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn2:hover {
+    background-color: #fed48d;
+}
+
+/* ----------------- Reviews ------------------*/
+.review {
+    height: 80vh;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.heading2 {
+    color: #364d59;
+    font-family: 'Playfair Display';
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+
+.review-section {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.review-box {
+    height: 270px;
+    max-width: 350px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.reviewer-detail {
+    display: flex;
+
+}
+
+.review-img1 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../Images/person_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+span {
+    color: #ccc;
+    padding-top: 8px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.name {
+    display: block;
+    color: #364d59;
+}
+
+.reviewer-para {
+    font-size: 18px;
+    color: #364d59;
+    padding-top: 30px;
+    line-height: 30px;
+}
+
+/* -------------------- review Image2-------------- */
+.review-img2 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../Images/person_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* -------------------- review Image3-------------- */
+.review-img3 {
+    height: 50px;
+    width: 50px;
+    background-image: url(../Images/person_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* ----------------- Second Solution --------------------- */
+.second-solution {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.solution-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.second-solution-img {
+    height: 500px;
+    width: 380px;
+    background-image: url(../Images/atty_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-solution-heading {
+    color: #364d59;
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.second-solution-para {
+    max-width: 400px;
+    color: #364d59;
+    font-size: 18px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.second-solution-list {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.second-solution-list li {
+    color: #364d59;
+    line-height: 30px;
+}
+
+.second-solution-list li i {
+    margin-right: 20px;
+}
+
+.question-box .btn-link {
+    width: 100%;
+    background-color: #fff;
+    color: #999;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: left;
+    border: 1px solid #efefef;
+}
+
+.question-box .btn-link:hover {
+    color: #000;
+}
+
+.btn {
+    background-color: white !important;
+    color: #000 !important;
+}
+
+.answer {
+    max-height: 350px;
+    width: 350px;
+    background-color: #f8f9fa;
+}
+
+.answer-para {
+    padding: 20px;
+    color: #888;
+    line-height: 30px;
+}
+
+/* ---------------- footer -------------------- */
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_footer.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.row-col1{
+    padding-bottom: 20px;
+}
+.row-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.footer-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.footer-para{
+    color: white;
+    max-width: 250px;
+    line-height: 30px;
+}
+.row-col1 .icon-links{
+    list-style: none;
+    display: inline;
+}
+.row-col1 .icon-links .icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.inside-col .footer-ul .footer-li{
+    list-style: none;
+    padding-bottom: 20px;
+}.inside-col ul .footer-li .footer-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+.inside-col ul li .footer-links:hover{
+    color: white;
+}
+
+/*-------------------- CopyRight Div ---------------------- */
+.border-top{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 1rem;
+}

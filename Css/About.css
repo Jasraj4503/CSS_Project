@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main: #FEE2b3;
+}
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- Navbar ---------------------- */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27.2px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+/* ----------------------- Dropdown ------------------- */
+.dropdown-menu {
+    display: none;
+}
+
+.navbar li:hover .dropdown-menu {
+    height: 250px;
+    width: 220px;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: aliceblue;
+}
+
+.dropdown-menu ul li a {
+    color: black;
+}
+
+/* --------------- About Section --------------- */
+.about-sec{
+    height: 550px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.about-heading strong{
+    font-weight: 900;
+}
+.about-para{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 400px;
+}
+
+/* ----------------- solutions ----------------- */
+.solutions {
+    height: 85vh;
+    width: 100%;
+    background-color: white;
+}
+
+.solution-content {
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.solution-img {
+    display: inline-flex;
+    column-gap: 20px;
+}
+
+.solution-img-1 {
+    height: 400px;
+    width: 300px;
+    background-image: url(../Images/atty_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-img-2 {
+    height: 400px;
+    width: 300px;
+    background-image: url(../Images/atty_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solution-heading {
+    color: #364d59;
+    font-weight: 300;
+    font-size: 28px;
+    font-family: 'Playfair Display';
+}
+
+.solution-para {
+    max-width: 400px;
+    color: #364d59;
+    font-size: 1.2rem;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.btn2 {
+    height: 50px;
+    width: 50%;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.btn2:hover {
+    background-color: #fed48d;
+}
+
+/*------------------ Team Section ----------------- */
+.our-team{
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+.team-heading{
+    color: #364d59;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Playfair Dispaly';
+    padding-top: 50px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.margin{
+    margin-top: 80px;
+}
+.members-card{
+    height: 230px;
+    width: 350px;
+    background-color: white;
+}
+.member-img1{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+.member-position{
+    color: #ccc;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.member-name{
+    color: #364d59;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: 'Playfair Display';
+}
+.about-member{
+    color: #364d59;
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+/*------------------------ Member Images Div ----------------------- */
+.member-img2{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+.member-img3{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+.member-img4{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+.member-img5{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+.member-img6{
+    height: 80px;
+    width: 80px;
+    background-image: url(../Images/person_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: -40px;
+    margin-inline: auto;
+}
+
+/* ---------------- footer -------------------- */
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_footer.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.row-col1{
+    padding-bottom: 20px;
+}
+.row-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.footer-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.footer-para{
+    color: white;
+    max-width: 250px;
+    line-height: 30px;
+}
+.row-col1 .icon-links{
+    list-style: none;
+    display: inline;
+}
+.row-col1 .icon-links .icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.inside-col .footer-ul .footer-li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.inside-col ul .footer-li .footer-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+.inside-col ul li .footer-links:hover{
+    color: white;
+}
+
+/*-------------------- CopyRight Div ---------------------- */
+.border-top{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 1rem;
+}

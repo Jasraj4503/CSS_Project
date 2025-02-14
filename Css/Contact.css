@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --main: #FEE2b3;
+}
+
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_1.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- Navbar ---------------------- */
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27.2px;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.navbar li a:hover {
+    color: black;
+}
+
+/* ----------------------- Dropdown ------------------- */
+.dropdown-menu {
+    display: none;
+}
+
+.navbar li:hover .dropdown-menu {
+    height: 250px;
+    width: 220px;
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: aliceblue;
+}
+
+.dropdown-menu ul li a {
+    color: black;
+}
+
+/* --------------- contact Section --------------- */
+.contact-sec{
+    height: 550px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+.contact-heading strong{
+    font-weight: 900;
+}
+.contact-para{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 400px;
+}
+
+/*------------------- form ------------------ */
+.form{
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+.form-container{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.name-box{
+    display: flex;
+    column-gap: 25px;
+}
+.name-input{
+    height: 55px;
+    width: 350px;
+}
+.email{
+    height: 55px;
+    width: 100%;
+}
+.message{
+    height: 250px;
+    width: 100%;
+    padding-top: 10px;
+}
+.input-style{
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+}
+.input-style:focus{
+    border: 1px solid #FEE2b3;
+}
+.send-btn{
+    height: 60px;
+    width: 350px;
+    background-color: var(--main);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+.send-btn:hover{
+    background-color: #fed48d;
+}
+.contact-info{
+    height: 390px;
+    width: 350px;
+    background-color: white;
+    margin-bottom: 80px;
+    padding: 3rem;
+}
+.contact-info-heading{
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'playfair display';
+}
+.contact-info .contact-list{
+    list-style: none;
+}
+.contact-info .contact-list li{
+    padding-top: 30px;
+}
+.block{
+    display: block;
+}
+.contact-address{
+    color: #364d36;
+}
+
+/* ---------------- footer -------------------- */
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/hero_bg_footer.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.row-col1{
+    padding-bottom: 20px;
+}
+.row-col2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+}
+.footer-heading{
+    font-family: 'Playfair Display';
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.footer-para{
+    color: white;
+    max-width: 250px;
+    line-height: 30px;
+}
+.row-col1 .icon-links{
+    list-style: none;
+    display: inline;
+}
+.row-col1 .icon-links .icons{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.inside-col .footer-ul .footer-li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+.inside-col ul .footer-li .footer-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.4s;
+}
+.inside-col ul li .footer-links:hover{
+    color: white;
+}
+
+/*-------------------- CopyRight Div ---------------------- */
+.border-top{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.copyright{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 1rem;
+}
