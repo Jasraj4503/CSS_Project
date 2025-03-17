@@ -8,7 +8,7 @@ body {
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(../Images/hero_bg_1.jpg.webp);
     background-repeat: no-repeat;
@@ -24,30 +24,37 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+#close {
+    display: none;
+}
+
+#bar {
+    display: none;
+}
 
 .logo {
     font-size: 27.2px;
     font-weight: 700;
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar li {
+#navbar li {
     list-style: none;
     padding: 0 30px;
 }
 
-.navbar li a {
+#navbar li a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
 }
 
-.navbar li a:hover {
+#navbar li a:hover {
     color: black;
 }
 
@@ -56,7 +63,7 @@ nav {
     display: none;
 }
 
-.navbar li:hover .dropdown-menu {
+#navbar li:hover .dropdown-menu {
     height: 250px;
     width: 220px;
     display: block;
@@ -64,7 +71,7 @@ nav {
     background-color: white;
 }
 
-.dropdown-menu ul li {
+#navbar .dropdown-menu ul li {
     padding: 10px 20px;
     text-align: left;
 }
@@ -95,45 +102,50 @@ nav {
     font-weight: 900;
 }
 .about-para{
+    max-width: 700px;
     color: white;
     text-align: center;
     font-size: 18px;
-    padding: 10px 400px;
 }
 
 /* ----------------- solutions ----------------- */
 .solutions {
-    height: 85vh;
+    height: 100%;
     width: 100%;
     background-color: white;
 }
 
 .solution-content {
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
 }
 
 .solution-img {
     display: inline-flex;
     column-gap: 20px;
+    width: 500px;
 }
 
 .solution-img-1 {
     height: 400px;
-    width: 300px;
+    width: 50%;
     background-image: url(../Images/atty_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .solution-img-2 {
     height: 400px;
-    width: 300px;
+    width: 50%;
     background-image: url(../Images/atty_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .solution-heading {
@@ -167,7 +179,7 @@ nav {
 
 /*------------------ Team Section ----------------- */
 .our-team{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #f8f9fa;
 }
@@ -183,11 +195,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
+    gap: 80px;
+    flex-wrap: wrap;
     margin-top: 50px;
-}
-.margin{
-    margin-top: 80px;
+    padding: 30px;
 }
 .members-card{
     height: 230px;
@@ -279,7 +290,7 @@ nav {
 
 /* ---------------- footer -------------------- */
 .footer {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(../Images/hero_bg_footer.jpg.webp);
     background-repeat: no-repeat;
@@ -287,11 +298,13 @@ nav {
 }
 
 .row{
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 100px;
+    flex-wrap: wrap;
+    padding: 100px;
 }
 .row-col1{
     padding-bottom: 20px;
@@ -344,6 +357,9 @@ nav {
 }
 
 /*-------------------- CopyRight Div ---------------------- */
+.row2{
+    padding: 50px;
+}
 .border-top{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -352,4 +368,89 @@ nav {
     color: white;
     padding-top: 30px;
     font-size: 1rem;
+}
+
+@media (max-width:500px) {
+
+    nav {
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
+
+    #navbar {
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        z-index: 999;
+        display: block;
+        background-color: white;
+        padding-top: 80px;
+        transition: all 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        padding: 15px 30px;
+    }
+
+    #navbar li a {
+        font-size: 20px;
+    }
+
+    #bar {
+        display: block;
+        font-size: 20px;
+    }
+
+    #close {
+        display: block;
+        font-size: 25px;
+        color: #000;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    /* --------------- About Section --------------- */
+    .about-para{
+        padding: 12px;
+    }
+
+    /* <!-------------- Solutions -----------------> */
+
+    .solution-content{
+        padding: 0;
+    }
+    .solution-img{
+        padding: 20px;
+    }
+    .solution-info{
+        padding: 30px;
+    }
+
+    /* ---------------- footer -------------------- */
+    .row{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 70px 20px 40px 10px;
+    }
+    .answer{
+        width: 100%;
+    }
+    .row-col2{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 0px;
+    } 
+
+    /*-------------------- CopyRight Div ---------------------- */
+    .row2{
+        padding: 30px;
+    }
 }

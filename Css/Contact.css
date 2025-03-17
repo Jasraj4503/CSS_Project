@@ -10,7 +10,7 @@ body {
 }
 
 .main {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(../Images/hero_bg_1.jpg.webp);
     background-repeat: no-repeat;
@@ -26,30 +26,36 @@ nav {
     justify-content: space-around;
     align-items: center;
 }
+#close {
+    display: none;
+}
 
+#bar {
+    display: none;
+}
 .logo {
     font-size: 27.2px;
     font-weight: 700;
 }
 
-.navbar {
+#navbar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar li {
+#navbar li {
     list-style: none;
     padding: 0 30px;
 }
 
-.navbar li a {
+#navbar li a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
     font-size: 16px;
 }
 
-.navbar li a:hover {
+#navbar li a:hover {
     color: black;
 }
 
@@ -58,7 +64,7 @@ nav {
     display: none;
 }
 
-.navbar li:hover .dropdown-menu {
+#navbar li:hover .dropdown-menu {
     height: 250px;
     width: 220px;
     display: block;
@@ -66,7 +72,7 @@ nav {
     background-color: white;
 }
 
-.dropdown-menu ul li {
+#navbar .dropdown-menu ul li {
     padding: 10px 20px;
     text-align: left;
 }
@@ -97,24 +103,26 @@ nav {
     font-weight: 900;
 }
 .contact-para{
+    max-width: 700px;
     color: white;
     text-align: center;
     font-size: 18px;
-    padding: 10px 400px;
 }
 
 /*------------------- form ------------------ */
 .form{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #f8f9fa;
 }
 .form-container{
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 40px;
+    flex-wrap: wrap;
+    padding: 100px;
 }
 form{
     display: flex;
@@ -123,7 +131,7 @@ form{
 }
 .name-box{
     display: flex;
-    column-gap: 25px;
+    gap: 25px;
 }
 .name-input{
     height: 55px;
@@ -187,7 +195,7 @@ form{
 
 /* ---------------- footer -------------------- */
 .footer {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(../Images/hero_bg_footer.jpg.webp);
     background-repeat: no-repeat;
@@ -195,11 +203,13 @@ form{
 }
 
 .row{
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 100px;
+    flex-wrap: wrap;
+    padding: 100px;
 }
 .row-col1{
     padding-bottom: 20px;
@@ -252,6 +262,9 @@ form{
 }
 
 /*-------------------- CopyRight Div ---------------------- */
+.row2{
+    padding: 50px;
+}
 .border-top{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -260,4 +273,100 @@ form{
     color: white;
     padding-top: 30px;
     font-size: 1rem;
+}
+
+@media (max-width:500px) {
+
+    nav {
+        justify-content: space-between;
+        padding-inline: 30px;
+    }
+
+    #navbar {
+        position: fixed;
+        height: 100%;
+        width: 300px;
+        top: 0;
+        right: -300px;
+        z-index: 999;
+        display: block;
+        background-color: white;
+        padding-top: 80px;
+        transition: all 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        padding: 15px 30px;
+    }
+
+    #navbar li a {
+        font-size: 20px;
+    }
+
+    #bar {
+        display: block;
+        font-size: 20px;
+    }
+
+    #close {
+        display: block;
+        font-size: 25px;
+        color: #000;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    /* --------------- contact Section --------------- */
+    .contact-para{
+        padding: 12px;
+    }
+
+    /*------------------- form ------------------ */
+    .form-container{
+        padding: 2px;
+        column-gap: 0px;
+    }
+    .name-box{
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+        padding: 10px;
+        margin-block: 30px;
+    }
+    .name-input{
+        width: 100%;
+    }  
+    .send-btn{
+        width: 100%;
+    } 
+    .contact-info{
+        width: 100%;
+        margin: 10px;
+    }
+    
+    /* ---------------- footer -------------------- */
+    .row{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 70px 20px 40px 10px;
+    }
+    .answer{
+        width: 100%;
+    }
+    .row-col2{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 0px;
+    } 
+    /*-------------------- CopyRight Div ---------------------- */
+    .row2{
+        padding: 30px;
+    }
 }

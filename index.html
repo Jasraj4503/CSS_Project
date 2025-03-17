@@ -16,9 +16,11 @@
         <!-------------- Navbar ----------------->
         <nav>
             <div class="logo">Notary</div>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./HTML/Practice-Area.html">Practice Areas <i class="fa-sharp fa-solid fa-angle-down fa-xs"></i></a>
+            <ul id="navbar">
+                <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="./HTML/Practice-Area.html">Practice Areas<i
+                            class="fa-sharp fa-solid fa-angle-down fa-xs"></i></a>
 
                     <!-- -------------- Dropdown ------------ -->
                     <div class="dropdown-menu">
@@ -36,6 +38,9 @@
                 <li><a href="./HTML/About.html">About</a></li>
                 <li><a href="./HTML/Contact.html">Contact</a></li>
             </ul>
+            <div id="bar">
+                <i class="fa-solid fa-bars font"></i>
+            </div>
         </nav>
 
         <!----------- Hero section ---------->
@@ -46,8 +51,10 @@
                 <h1 class="content-heading"><strong>Notary Public</strong>
                     &<br> Legal Solutions
                 </h1>
-                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Veritatis cupiditate
-                    deserunt placeat necessitatibus a aliquam<br> corrupti nisi odio aliquid, accusamus.
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Veritatis cupiditate
+                    deserunt placeat necessitatibus a aliquam
+                    corrupti nisi odio aliquid, accusamus.
                 </p>
             </div>
 
@@ -71,7 +78,7 @@
 
         <!-------------------- practice-topics --------------->
         <div class="practice-topics">
-            <div class="topic-col-1">
+            <div class="topic-col">
                 <div class="topic-box">
                     <i class="fa-solid fa-building-columns"></i>
                     <h3 class="topic-heading">Bankruptcy Law</h3>
@@ -90,8 +97,6 @@
                     <p id="topic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!
                     </p>
                 </div>
-            </div>
-            <div class="topic-col-2">
                 <div class="topic-box">
                     <i class="fa-solid fa-gun"></i>
                     <h3 class="topic-heading">Criminal Law</h3>
@@ -122,12 +127,11 @@
                 <div class="solution-img-2"></div>
             </div>
             <div class="solution-info">
-                <h3 class="solution-heading">We Provide Highly <strong>Reliable<br> & Effective</strong> Legal Solutions
+                <h3 class="solution-heading">We Provide Highly <strong>Reliable & Effective</strong> Legal Solutions
                 </h3>
                 <p class="solution-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
-                    explicabo iste a labore id
-                    est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam, voluptatibus voluptates
-                    optio accusamus, vel quasi quidem!
+                    explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam,
+                    voluptatibus voluptates optio accusamus, vel quasi quidem!
                 </p>
                 <button class="btn2">Book an appointment</button>
             </div>
@@ -145,7 +149,6 @@
                         <span class="name">Lina Gold</span>
                         <span>Owner, Ford</span>
                     </div>
-
                 </div>
                 <p class="reviewer-para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt
                     eveniet veniam.
@@ -159,7 +162,6 @@
                         <span class="name">Mike Fisher</span>
                         <span>Owner, Ford</span>
                     </div>
-
                 </div>
                 <p class="reviewer-para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt
                     eveniet veniam.
@@ -173,7 +175,6 @@
                         <span class="name">Sheen Yu</span>
                         <span>Owner, Ford</span>
                     </div>
-
                 </div>
                 <p class="reviewer-para">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt
                     eveniet veniam.
@@ -185,10 +186,10 @@
 
     <!---------------- Second Solution -------------------->
     <section class="second-solution">
-        <div class="solution-content">
+        <div class="solution-content2">
             <div class="second-solution-img"></div>
             <div class="second-solution-info">
-                <h3 class="second-solution-heading">We Have <strong>Legal<br> Solutions</strong></h3>
+                <h3 class="second-solution-heading">We Have <strong>Legal Solutions</strong></h3>
                 <p class="second-solution-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
                     reprehenderit perspiciatis iste culpa consequuntur consequatur eum, voluptatum, quod deserunt
                     maiores?</p>
@@ -202,7 +203,7 @@
                     <li><i class="fa-solid fa-check"></i>Perspic iste culpa</li>
                 </ul>
             </div>
-            <div class="Q&A-box">
+            <div class="QandA-box">
                 <div class="question-box">
                     <h2 class="heading-btn">
                         <button class="btn-link btn">How to download and register?</button>
@@ -238,13 +239,16 @@
             <div class="row">
                 <div class="row-col1">
                     <h2 class="footer-heading">About Us</h2>
-                    <p class="footer-para">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>  
+                    <p class="footer-para">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
                     <ul>
-                        <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
                         <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-instagram"></i></a></li>
                         <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    </ul>  
+                        <li class="icon-links"><a href="#" class="icons"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="row-col2">
                     <div class="inside-col">
@@ -293,11 +297,14 @@
             <!------------------- CopyRight Div ----------------->
             <div class="row2">
                 <div class="border-top">
-                    <p class="copyright">Copyright ©2025 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #d91212;"></i> by Colorlib</p>
+                    <p class="copyright">Copyright ©2025 All rights reserved | This template is made with <i
+                            class="fa-solid fa-heart" style="color: #d91212;"></i> by Colorlib</p>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="notary.js"></script>
 </body>
 
 </html>

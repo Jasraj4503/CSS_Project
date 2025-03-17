@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" href="Images/public-notary-round-icon-with-wreath-and-scales-vector.jpg">
 </head>
+
 <body>
     <section class="main">
         <!-------------- Navbar ----------------->
         <nav>
             <div class="logo">Notary</div>
-            <ul class="navbar">
+            <ul id="navbar">
+                <a href="" id="close"><i class="fa-solid fa-xmark"></i></a>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="Practice-Area.html">Practice Areas <i class="fa-sharp fa-solid fa-angle-down fa-xs"></i></a>
+                <li><a href="Practice-Area.html">Practice Areas <i
+                            class="fa-sharp fa-solid fa-angle-down fa-xs"></i></a>
 
                     <!-- -------------- Dropdown ------------ -->
                     <div class="dropdown-menu">
@@ -33,19 +37,21 @@
                 <li><a href="About.html">About</a></li>
                 <li><a href="Contact.html">Contact</a></li>
             </ul>
+            <div id="bar">
+                <i class="fa-solid fa-bars font"></i>
+            </div>
         </nav>
 
         <!-------------- Practice section ------------>
         <div class="practice-sec">
             <h1 class="practice-heading"><strong>Practice Areas</strong></h1>
-            <p class="practice-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus.</p>
+            <p class="practice-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis cupiditate
+                deserunt placeat necessitatibus a aliquam corrupti nisi odio aliquid, accusamus.</p>
         </div>
     </section>
 
     <!-------------- Practice Areas ----------------->
     <section class="practice-Areas">
-        <h2 class="heading"><strong>Practice</strong>Areas</h2>
-        <p class="heading-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
         <!-------------------- practice-topics --------------->
         <div class="practice-topics">
@@ -68,8 +74,6 @@
                     <p id="topic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!
                     </p>
                 </div>
-            </div>
-            <div class="topic-col-2">
                 <div class="topic-box">
                     <i class="fa-solid fa-gun"></i>
                     <h3 class="topic-heading">Criminal Law</h3>
@@ -88,6 +92,25 @@
                     <p id="topic-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, laboriosam!
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------- Solutions ----------------->
+    <section class="solutions">
+        <div class="solution-content">
+            <div class="solution-img">
+                <div class="solution-img-1"></div>
+                <div class="solution-img-2"></div>
+            </div>
+            <div class="solution-info">
+                <h3 class="solution-heading">We Provide Highly <strong>Reliable & Effective</strong> Legal Solutions
+                </h3>
+                <p class="solution-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae,
+                    explicabo iste a labore id est quas, doloremque veritatis! Provident odit pariatur dolorem quisquam,
+                    voluptatibus voluptates optio accusamus, vel quasi quidem!
+                </p>
+                <button class="btn2">Book an appointment</button>
             </div>
         </div>
     </section>
@@ -150,13 +173,15 @@
                 </div>
             </div>
 
-            <!------------------- CopyRight Div ----------------->
-            <div class="row2">
+    <!------------------- CopyRight Div ----------------->
+    <div class="row2">
                 <div class="border-top">
                     <p class="copyright">Copyright ©2025 All rights reserved | This template is made with <i class="fa-solid fa-heart" style="color: #d91212;"></i> by Colorlib</p>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="../notary.js"></script>
 </body>
+
 </html>
